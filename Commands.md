@@ -30,8 +30,11 @@
       Command : git switch -c branchName                    (create new branch)
 
                 git switch main                             (switch to main branch, cant delete branch without switching to main)
-                git switch -                                (switch to previous branch)
+                git switch branchName                       (switch to any branch)
 
+                git push origin branchName                  (push to GitHub)
+      
+                git merge branchName                        (merge branches)
 
                 git branch -d branchName                    (delete branch locally)
                 git push origin --delete branchName         (delete from GitHub)
@@ -39,7 +42,9 @@
 
 **OTHERS**
 
-      Commands : git log                                 (check past commits) 
+      Commands : git pull                                (take new commits on GitHub to local)
+      
+                 git log                                 (check past commits) 
 
                  git diff                                (shows the changes made)
                  git diff commit1 commit2
